@@ -11,7 +11,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
     div.textContent = `Title: ${data[0].title}, Body: ${data[0].body}`;
     // let listaOrdenada = '<ol>';
     
-    // for (usuario in data) {
+    // for (user in data) {
     //     '<li>' + `Title ${usuario.title}` +'</li>';
     // }
   })
