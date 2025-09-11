@@ -8,7 +8,9 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
     return response.json();
   })
   .then(function(json){
-    div.innerText = json.body;
+    let post = Post.frontRaw(json);
+    console.log(post);
+    // div.innerText = json.body;
     // div.innerText = JSON.stringify(json, null, 0);
   })
 });
