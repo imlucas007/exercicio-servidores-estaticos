@@ -9,7 +9,8 @@ fetch('https://jsonplaceholder.typicode.com/posts/99')
   })
   .then(function(json){
     let post = Post.frontRaw(json);
-    console.log(post);
+    div = post.renderFrom(div);
+    
     // div.innerText = json.body;
     // div.innerText = JSON.stringify(json, null, 0);
   })
